@@ -99,3 +99,78 @@ Cytonn Innovation Ltd is positioning itself at the forefront of cloud and infras
 > 💼 With a strategic focus on innovation, security, and operational excellence, Cytonn is ready to thrive in the digital future.
 
 ---
+# 🏫 University ICT Infrastructure Overview
+
+As an integral part of the University's ICT infrastructure, the following components have been strategically incorporated to ensure high availability, scalability, and security across campuses:
+
+---
+
+## 🌐 Internet Services Provider (ISP)
+
+- The university maintains active subscriptions with **two ISPs**:
+  - **SEACOM**
+  - **Safaricom**
+
+> 🔁 This dual setup ensures **redundant internet connectivity** for uninterrupted access.
+
+---
+
+## 🔐 Network Security
+
+- Two **Cisco ASA 5500-X Series Firewalls** have been deployed.
+- These firewalls provide:
+  - Advanced threat protection  
+  - High availability  
+  - Redundancy in network security
+
+---
+
+## 🧭 Network Routing
+
+- **Routing functionality** is implemented using:
+  - The Cisco ASA firewalls  
+  - Core switches  
+- ❌ No dedicated router is used, reducing hardware dependencies.
+
+---
+
+## 🔀 Switching Infrastructure
+
+- For each campus:
+  - **2 × Cisco Catalyst 3850** 48-Port Switches
+- Additional access layer:
+  - **Cisco Catalyst 2960** 48-Port Switches
+
+> ⚙️ This setup ensures robust **local network connectivity** and smooth traffic handling.
+
+---
+
+## 🖥️ Server Hardware & Virtualization
+
+- **2 Physical Servers** support virtualization via **hypervisor technology**.
+- Multiple **Virtual Machines (VMs)** are created to deliver essential services.
+- To ensure **redundancy and high availability**:
+  - Two **DHCP servers** run concurrently.
+
+---
+
+## 📡 Wireless Infrastructure
+
+- Centralized wireless management via:
+  - **2 Cisco Wireless LAN Controllers (WLCs)**
+- Supported by:
+  - Multiple **Lightweight Access Points (LAPs)**
+
+> 📶 Ensures efficient, scalable, and centralized wireless access across all campuses.
+
+---
+
+## 📞 VoIP / IP Telephony
+
+- **VoIP (Voice over IP)** or **IP Phones** will be integrated for seamless internal and external communication across departments and offices.
+
+---
+
+> 🛠️ This well-orchestrated infrastructure ensures the University ICT environment remains **resilient**, **secure**, and **future-ready**.
+
+
