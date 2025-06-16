@@ -1,97 +1,101 @@
 # Design-and-Implementation-of-a-Secure-Company-Network-System
 
-Cytonn Innovation Ltd is a dynamic and forward-thinking company specializing in providing innovative cloud solutions to clients worldwide. Leveraging cutting-edge technology and a team of highly skilled professionals, Cytonn Innovation focuses on developing and implementing cloud-based solutions tailored to meet the evolving needs of businesses across various industries.
+
+# 🌐 Cytonn Innovation Ltd – Cloud-Driven Transformation
+
+**Cytonn Innovation Ltd** is a dynamic and forward-thinking company specializing in providing **innovative cloud solutions** to clients worldwide. Leveraging **cutting-edge technology** and a team of highly skilled professionals, Cytonn Innovation focuses on developing and implementing **cloud-based solutions** tailored to the evolving needs of businesses across various industries.
 
 With a strong emphasis on:
 
-✨ Creativity
+- ✨ Creativity  
+- ⚡ Agility  
+- 👥 Customer-centricity  
 
-⚡ Agility
+Cytonn Innovation empowers organizations to enhance their:
 
-👥 Customer-centricity
+- Operational Efficiency  
+- Scalability  
+- Competitiveness in today’s digital landscape  
 
-Cytonn Innovation empowers organizations to enhance:
+---
 
-Operational Efficiency
+## 🏢 Company Expansion & Infrastructure Design
 
-Scalability
+With a growing **workforce of 600 staff**, Cytonn Innovation Ltd is preparing to move into a **new three-story building**, which will house the following departments:
 
-Competitiveness in today’s digital landscape
+- 📈 Sales & Marketing  
+- 🧑‍💼 Human Resources & Logistics  
+- 💰 Finance & Accounts  
+- 🏛️ Administration & Public Relations  
+- 💻 ICT Department  
+- 🖥️ Server Room  
 
-🏢 Company Expansion & Infrastructure Design
-With a growing workforce of 600 staff, Cytonn Innovation Ltd is preparing to move into a new three-story building. This facility will house key departments including:
+### 🧑‍💻 ICT Department Roles
 
-Sales & Marketing
+The ICT department consists of:
 
-Human Resources & Logistics
+- Software Developers  
+- Cloud Engineers  
+- Cybersecurity Engineers  
+- Network Engineers  
+- System Administrators  
+- IT Support Specialists  
+- Business Analysts  
+- Project Managers  
 
-Finance & Accounts
+---
 
-Administration & Public Relations
+## 🔐 Network Design & Security Architecture
 
-ICT Department
+A new network service will be designed and implemented with **robust security measures** to safeguard from both **internal** and **external** threats.
 
-Server Room
+### 🧱 Firewall Security Zones
 
-🖥️ ICT Department Roles
-The ICT department comprises:
+- **Outside Zone** – Public-facing network  
+- **Inside Zone** – Internal and trusted network  
+- **DMZ (Demilitarized Zone)** – Semi-trusted zone for externally accessible servers  
 
-Software Developers
+### 📁 Server Placement Overview
 
-Cloud Engineers
+| Server Type                     | Zone         |
+|--------------------------------|--------------|
+| Active Directory (AD)          | Inside       |
+| DHCP, DNS, RADIUS              | Inside       |
+| FTP, Web, Email, App, NAS      | DMZ          |
 
-Cybersecurity Engineers
+> ✅ This zoning ensures a secure, segmented network where internal resources are protected and only necessary services are exposed.
 
-Network Engineers
+---
 
-System Administrators
+## 🏫 Main Campus Server Farm (DMZ)
 
-IT Support Specialists
+The **Main Campus** hosts the centralized **Server Farm**, commonly referred to as the **DMZ**. It includes:
 
-Business Analysts
+- 📡 DHCP  
+- 🌐 DNS  
+- 📁 FTP  
+- 🕸️ Web  
+- ✉️ Email  
+- 📤 SMTP  
 
-Project Managers
+Users at the **Branch Campus** securely connect to these centralized services. This **protected connectivity** ensures reliable access to:
 
-🔒 Network Design & Security Architecture
-A new network service will be designed and implemented for the building, prioritizing robust security measures to safeguard against both internal and external threats.
+- 📘 Educational Resources  
+- 💬 Communication Tools  
+- 📊 Information Systems  
 
-🔥 Firewall Zones:
-Outside Zone
+> 🔒 Secure resource access is enforced across all campuses, ensuring continuity and protection regardless of user location.
 
-Inside Zone
+---
 
-DMZ (Demilitarized Zone)
+## ✅ Conclusion
 
-📁 Server Placement:
-Server Type	Zone Placement
-Active Directory (AD)	Inside
-DHCP, DNS, RADIUS	Inside
-FTP, Web, Email, App, NAS Storage	DMZ
+Cytonn Innovation Ltd is positioning itself at the forefront of cloud and infrastructure transformation by:
 
-🔐 Note: These security zones ensure compartmentalization and enforce security boundaries between public-facing and internal network resources.
+- Building a **secure, scalable network**
+- Enabling **seamless multi-department collaboration**
+- Delivering **cloud-powered solutions** to clients across the globe
 
-🏢 Server Farm at the Main Campus
-At the heart of Cytonn’s infrastructure lies the Main Campus, hosting a fortified Server Farm (DMZ). This includes:
+> 💼 With a strategic focus on innovation, security, and operational excellence, Cytonn is ready to thrive in the digital future.
 
-DHCP
-
-DNS
-
-FTP
-
-Web
-
-Email
-
-SMTP Servers
-
-Branch campus users can securely connect to and utilize these centralized resources through secured channels, enabling seamless access to:
-
-📚 Educational Resources
-
-💬 Communication Platforms
-
-📊 Informational Systems
-
-This approach ensures secure, reliable, and location-agnostic access for all users.
-
+---
