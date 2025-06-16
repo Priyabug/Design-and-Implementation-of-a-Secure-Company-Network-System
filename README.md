@@ -249,6 +249,206 @@ The network design will empower the company to:
 > 🧩 This logical design serves as the foundation for the implementation phase, aligning IT infrastructure with core business objectives.
 
 ---
+# 🛠️ Technologies Implemented
+
+Below are the core technologies and strategies utilized in designing and implementing the network solution:
+
+---
+
+## 1️⃣ Design Tool – Cisco Packet Tracer
+
+- 🧪 **Cisco Packet Tracer** is used for the **design, simulation, and validation** of the network.
+- Allows modeling of real-world scenarios to ensure configuration accuracy before deployment.
+
+---
+
+## 2️⃣ Hierarchical Network Design
+
+- 🏛️ Follows a **three-tier hierarchical model**:
+  - **Core Layer** – High-speed backbone connectivity
+  - **Distribution Layer** – Policy-based routing, VLAN management
+  - **Access Layer** – User and endpoint connectivity
+- 🔁 Implements **redundancy** at key points to improve **network resilience** and **availability**.
+
+---
+
+## 3️⃣ ISP Integration
+
+- 🌐 Establishes direct **connectivity to an Airtel ISP Router**.
+- Ensures reliable **external access** to internet services and cloud-based resources.
+
+---
+
+## 4️⃣ Wireless LAN Infrastructure (WLC + WAPs)
+
+- 📶 Each department is equipped with **Wireless Access Points (WAPs)** to offer Wi-Fi services to:
+  - Employees
+  - Corporate users
+  - External auditors
+  - Guests
+- 🧠 All WAPs are **centrally managed** using a **Cisco Wireless LAN Controller (WLC)**, providing:
+  - Centralized configuration
+  - Security policy enforcement
+  - Seamless roaming across access points
+
+## 5️⃣ VoIP – Voice over IP Communication
+
+- ☎️ Deploy **IP phones** across all departments to facilitate **VoIP-based communication**.
+- Reduces reliance on traditional telephony and integrates with the existing network infrastructure.
+- Enables cost-effective internal calling and scalable telephony features.
+
+---
+
+## 6️⃣ VLAN Configuration
+
+- 🔀 Implement **Virtual LANs (VLANs)** to logically segment the network for better performance and security.
+
+| VLAN ID | Purpose          |
+|---------|------------------|
+| 10      | Management       |
+| 20      | LAN (Wired users)|
+| 50      | WLAN (Wireless)  |
+| 70      | VoIP             |
+| 199     | Blackhole (Unused ports) |
+
+> 🚫 **VLAN 199 (Blackhole)** ensures that **all unused switch ports** are isolated, reducing the attack surface and preventing unauthorized access.
+
+---
+
+## 7️⃣ EtherChannel – Link Aggregation with LACP
+
+- 🔗 Configure **EtherChannel** using the **Link Aggregation Control Protocol (LACP)**.
+- Bundles multiple physical links into a single logical link for:
+  - 🚀 Increased **bandwidth**
+  - ✅ Enhanced **redundancy**
+  - ⚙️ Improved **load balancing**
+
+> 🔐 EtherChannel ensures fault tolerance and efficient utilization of switch uplinks in the core and distribution layers.
+
+## 8️⃣ STP Enhancements – PortFast & BPDU Guard
+
+- 🧷 Configure **Spanning Tree Protocol (STP)** with:
+  - **PortFast** to reduce port transition delays (from blocking to forwarding)
+  - **BPDU Guard** to prevent rogue switches from compromising the network
+
+> 🔐 Enhances Layer 2 security and minimizes boot-time disruptions.
+
+---
+
+## 9️⃣ Subnetting – Efficient IP Allocation
+
+- 📊 Use **subnetting techniques** to allocate the right number of IP addresses to each department or network group.
+- Promotes efficient IP space management and network segmentation.
+
+---
+
+## 🔟 Basic Device Settings
+
+- 🔧 Apply essential configurations to all networking devices:
+  - Hostnames  
+  - Console and enable passwords  
+  - Login banners  
+  - Password encryption  
+  - Disable IP domain lookup
+
+> 🛡️ These foundational settings enhance device identity, security, and user experience.
+
+---
+
+## 1️⃣1️⃣ Inter-VLAN Routing
+
+- 🌐 Configure **Inter-VLAN routing** on **multilayer switches** to enable communication between devices in different VLANs.
+
+> ✅ Ensures full Layer 3 connectivity across all departments.
+
+---
+
+## 1️⃣2️⃣ Core Switch Configuration
+
+- 🧠 Assign **IP addresses** to multilayer switches to enable both:
+  - **Layer 2 switching**
+  - **Layer 3 routing**
+
+> 🛠️ This hybrid approach optimizes performance and central control.
+
+---
+
+## 1️⃣3️⃣ DHCP Server Integration
+
+- 📥 Devices receive **dynamic IP addresses** from centralized DHCP servers located at the **server farm**.
+- Simplifies IP management across multiple network segments.
+
+---
+
+## 1️⃣4️⃣ HSRP – High Availability
+
+- 🚨 Implement **Hot Standby Router Protocol (HSRP)** for:
+  - Redundancy  
+  - Load balancing  
+  - Automatic failover
+
+> 🟢 Guarantees continuous network availability and smooth failover during outages.
+
+---
+
+## 1️⃣5️⃣ Static IP Addressing
+
+- 🔒 Assign **static IPs** to critical devices in the **server room** for:
+  - Consistency  
+  - Easy management  
+  - Improved reliability
+
+---
+
+## 1️⃣6️⃣ Routing Protocol – OSPF
+
+- 🧭 Use **Open Shortest Path First (OSPF)** to advertise routes across:
+  - Cisco ASA Firewall  
+  - Routers  
+  - Multilayer switches
+
+> 🚀 Enables dynamic, efficient, and scalable routing decisions.
+
+---
+
+## 1️⃣7️⃣ Standard ACL for SSH
+
+- 🔐 Apply a **standard Access Control List (ACL)** on **VTY lines** to:
+  - Allow SSH access only from the **Senior Network Security Engineer’s PC**
+  - Block all other unauthorized remote access attempts
+
+---
+
+## 1️⃣8️⃣ Cisco ASA Firewall Configuration
+
+- 🔥 Configure the **Cisco ASA Firewall** with:
+  - Default static routes  
+  - Hostname and password settings  
+  - Security levels and zones  
+  - Access Control Policies
+
+> 🎯 Provides perimeter defense and enforces security policies across network zones.
+
+---
+
+## 1️⃣9️⃣ Final Testing & Validation
+
+- 🧪 Conduct **comprehensive testing** to ensure:
+  - Inter-department communication  
+  - Internet access  
+  - DHCP lease distribution  
+  - Routing protocol convergence  
+  - Firewall enforcement
+
+> ✅ Validates that all configurations work as intended before going live.
+
+---
+
+> 🚀 With these implementations, the proposed network ensures **scalability, redundancy, security, and performance**, meeting current needs and supporting future growth.
+
+
+
+
 
 
 
