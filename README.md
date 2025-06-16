@@ -99,8 +99,6 @@ Cytonn Innovation Ltd is positioning itself at the forefront of cloud and infras
 > 💼 With a strategic focus on innovation, security, and operational excellence, Cytonn is ready to thrive in the digital future.
 
 ---
-# 🏫 University ICT Infrastructure Overview
-
 As an integral part of the University's ICT infrastructure, the following components have been strategically incorporated to ensure high availability, scalability, and security across campuses:
 
 ---
