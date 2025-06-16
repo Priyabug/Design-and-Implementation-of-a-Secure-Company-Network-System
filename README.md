@@ -169,6 +169,86 @@ As an integral part of the University's ICT infrastructure, the following compon
 
 ---
 
-> 🛠️ This well-orchestrated infrastructure ensures the University ICT environment remains **resilient**, **secure**, and **future-ready**.
+# ☁️ Cloud-Driven Network Design Proposal
+
+Cloud computing, as a pivotal technology, enables seamless connectivity between clients worldwide and the company's services and resources. Therefore, the **proposed network** must ensure secure, scalable, and efficient access to these resources.
+
+---
+
+## 🧑‍💻 Your Role: Network Design Lead
+
+As a **key member of the Networks Team**, you have been tasked with designing the **logical network architecture** for the new company building.
+
+This design must address:
+
+- 🚀 **Top-tier performance**
+- 🔁 **Redundancy**
+- 📈 **Scalability**
+- ⏱️ **High availability**
+
+The objective is to build a **future-proof** and **business-aligned** network infrastructure.
+
+---
+
+## 🧠 Logical Network Design Objectives
+
+The logical network should:
+
+- Ensure seamless access to cloud-based services
+- Support department-level segmentation
+- Centralize management and monitoring
+- Include appropriate security zones
+- Be adaptable for future expansion
+
+---
+
+## 🧩 IP Addressing Scheme
+
+To support the network segmentation and various service layers, the following **IP ranges** have been allocated:
+
+| **Network Segment** | **Purpose**                          | **IP Range**            |
+|---------------------|--------------------------------------|-------------------------|
+| 🛠️ Management       | Device & network management          | `192.168.10.0/24`       |
+| 📶 WLAN             | Wireless client access               | `10.20.0.0/16`          |
+| 🖧 LAN              | Wired local area network             | `172.16.0.0/16`         |
+| 📞 VoIP             | IP telephony and communication       | `172.30.0.0/16`         |
+| 🔒 DMZ              | Public-facing services (semi-trusted)| `10.11.11.0/27`         |
+| 🌍 Public IPs       | External connectivity via ISPs       | `105.100.50.0/30` (SEACOM)  
+|                     |                                      | `197.200.100.0/30` (Safaricom) |
+
+---
+
+## 🧱 Key Design Considerations
+
+1. **Redundancy**  
+   Dual firewalls, switches, and ISP connections for high availability.
+
+2. **Segmentation**  
+   Separate subnets for different departments and services (LAN, WLAN, VoIP, DMZ).
+
+3. **Scalability**  
+   IP address ranges are large enough to accommodate future growth.
+
+4. **Performance Optimization**  
+   VLANs, QoS (for VoIP), and efficient routing protocols.
+
+5. **Security**  
+   DMZ zone for public services, ACLs, and firewall rules for traffic control.
+
+---
+
+## ✅ Outcome
+
+The network design will empower the company to:
+
+- Enhance **operational efficiency**
+- Ensure **secure global connectivity**
+- Achieve **business continuity**
+- Prepare for **future technological advancements**
+
+> 🧩 This logical design serves as the foundation for the implementation phase, aligning IT infrastructure with core business objectives.
+
+---
+
 
 
