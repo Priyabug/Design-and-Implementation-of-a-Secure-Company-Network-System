@@ -96,7 +96,8 @@ Cytonn Innovation Ltd is positioning itself at the forefront of cloud and infras
 - Enabling **seamless multi-department collaboration**
 - Delivering **cloud-powered solutions** to clients across the globe
 
-![image](https://github.com/user-attachments/assets/a14a63fb-e996-4f7d-b67e-a4f1940f7f0e)
+![image](https://github.com/user-attachments/assets/a86e19b7-154d-4dc3-8a71-96f4c2fbea2f)
+
 
 
 ---
